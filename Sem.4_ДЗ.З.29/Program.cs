@@ -3,19 +3,20 @@
 
 int Prompt(string message)
 {
-    Console.Write("Привет");
+    Console.Write("Введите");
     string ReadInput=Console.ReadLine()!;
     int result=int.Parse(ReadInput);
     return result;
 }
-int[] GenerateArray (int Length,int minValue,int maxValue)
+int[] GenerateArray(int Length,int minValue,int maxValue)
 {
     int[]array=new int[Length];
-    Random random=new Random ();
+    Random random=new Random ();//!!!
     for(int i=0;i<Length; i++)
     {
         array[i]=random.Next(minValue,maxValue+1);
     }
+    return array;
 }
 void PrintArray(int[]array)
 {
