@@ -1,12 +1,13 @@
 ﻿// Напишите программу, которая принимает на вход число
 // и выдаёт сумму цифр в числе.
+int number=Prompt("Введите:");
+Console.WriteLine($"Сумма всех чисел в цифре{number}={Suma(number)}");//!!!
 
 int Prompt (string message)
 {
 Console.Clear();
 Console.WriteLine("Введите число.");
-string readInput=Console.ReadLine()!;
-int r = int.Parse(readInput)!;
+int r = int.Parse(Console.ReadLine()!);
 return r;
 }
 int Suma(int number)
@@ -19,5 +20,3 @@ int Suma(int number)
     }
     return r;
 }
-int number=Prompt("Введите:");
-Console.WriteLine($"Сумма всех чисел в цифре{number}={Suma(number)}");
